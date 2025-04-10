@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Portfólio</title>
+  <style>
+    :root {
+      --primary-color: #124ba0;
+      --secondary-color: #f8f9fa;
+      --dark-color: #212529;
+      --light-color: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: var(--secondary-color);
+      color: var(--dark-color);
+    }
+
+    header {
+      background: var(--primary-color);
+      color: var(--light-color);
+      padding: 60px 20px;
+      text-align: center;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background: var(--light-color);
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 15px;
+      box-shadow: 0 2px 8px rgba(56, 54, 54, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: var(--primary-color);
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background: var(--primary-color);
+      color: var(--light-color);
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      color: var(--primary-color);
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-left: 6px solid var(--primary-color);
+      padding-left: 10px;
+    }
+
+    p, li {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+
+    footer {
+      background: var(--dark-color);
+      color: rgb(248, 248, 248);
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      border-top-left-radius: 50px;
+      border-top-right-radius: 50px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--primary-color);
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #0b3472;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Miqueias dos santos araujo</h1>
+    <p>Desenvolvedor em formação | HTML | CSS | Python</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <div class="container">
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <p>Apenas um jovem de 22 anos, formado em Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e atualmente focado em aprender HTML, CSS e Python. Busco minha primeira oportunidade profissional na área de tecnologia e tenho interesse em várias áreas do setor, como infraestrutura, dados e segurança da informação.</p>
+    </section>
+ <section id="Trilha">
+        <h2>Trilha de aprendizado</h2>
+        <p>HTML: <a href="C:\Users\Mike\Desktop\SpeedRUN-   HTML\HTML\Exercicios-html.html">Inicio da jornada</a></p>
+        <p>CSS: <a href="C:\Users\Mike\Desktop\SpeedRUN-   HTML\INICIANDO CSS\Exercicios.html">Inclusão de CSSS</a></p>
+
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos</h2>
+      <ul>
+        <li>Portfólio Pessoal (este site)</li>
+        <li>Em breve: Projetos em Python e automação</li>
+      </ul>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Telefone: (19) 98315-0447</p>
+      <p>Email: Miqueias.dev@hotmail.com</p>
+      <p>Linkedin: <a href="https://www.linkedin.com/in/miqueias-santos-100637208/" target="_blank">Miqueias Araujo</a></p>
+      <p><a class="btn" href="mailto:Miqueias.dev@hotmail.com">Enviar e-mail</a></p>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Miqueias dos santos araujo.</p>
+  </footer>
+
+  <script>
+    document.querySelector('.btn').addEventListener('click', () => {
+      alert('Obrigado por entrar em contato!');
+    });
+  </script>
+</body>
+</html>
